@@ -11,7 +11,7 @@ int main()
     double a;
     double b;
     
-    cout << 'Введите значения x:';
+    cout << 'Введите значение x:';
     cin >> x;
     cout << "Введите значение y:";
     cin >> y;
