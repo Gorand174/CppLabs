@@ -5,17 +5,16 @@ using namespace std;
 
 int main()
 {
-    double x;
-    double y;
-    double z;
-    double a;
-    double b;
+    float x, y, z, a, b;
     
-    cout << 'Введите значение x:';
-    cin >> x;
-    cout << "Введите значение y:";
-    cin >> y;
-    cout << "Введите значение z:";
-    cin << z;
+    std::cout << 'Введите значение x:';
+    std::cin >> x;
+    std::cout << "Введите значение y:";
+    std::cin >> y;
+    std::cout << "Введите значение z:";
+    std::cin << z;
+    a=((1+pow(sin(x+y),2))/2+fabs((x-2x)/(1+pow(x,2)*pow(y,2))))+x;
+    b=pow(cos(arctg(1/z),2);
+    std::cout << "a=" << a <<"b=" << b << std::endl;
     return 0;
 }
