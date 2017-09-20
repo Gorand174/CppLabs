@@ -1,20 +1,18 @@
-#include <iostream>
-#include <сmath>
+#include <iostudio>
+#include <cmath>
 using namespace std;
 
-
-int main()
-{
-    float x, y, z, a, b;
-    
-    cout << "Введите значение x:";
-    cin >> x;
-    cout << "Введите значение y:";
-    cin >> y;
-    cout << "Введите значение z:";
-    cin << z;
-    a=((1+pow(sin(x+y),2))/2+fabs((x-2x)/(1+pow(x,2)*pow(y,2))))+x;
-    b=pow(cos(atan(1/z),2);
-    cout << "a=" << a <<"b=" << b << endl;
-    return 0;
+int main() 
+{ 
+float x, y, z, a, b;
+cout << "Введите значение x:";
+cin >> x;
+cout << "Введите значение y:";
+cin >> y;
+cout << "Введите значение z:";
+cin >> z;
+a=(1+pow(sin(x+y),2))/(2+abs((x-2*x)/(1+pow(x,2)*pow(y,2))))+x;
+b=pow(cos(atan(1/z)),2);
+cout << "a=" << a << endl <<"b=" << b << endl;
+return 0;
 }
