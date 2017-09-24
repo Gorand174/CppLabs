@@ -5,32 +5,30 @@ using namespace std;
 int main()
 {
 	float x, y;
-	cout << "Ââåäèòå çíà÷åíèå x, à çàòåì y: ";
-		cin >> x >> y;
-		if (x < 0 && y < 0)
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x, Ð° Ð·Ð°Ñ‚ÐµÐ¼ y: ";
+	cin >> x >> y;
+	if (x < 0 && y < 0)
+	{
+		x = abs(x), y = abs(y);
+	}
+	else
+	{
+		if ((x < 0) || (y < 0))
 		{
-			x = abs(x), y = abs(y);
+			x = x + 0.5, y = y + 0.5;
 		}
 		else
 		{
-			if ((x < 0) || (y < 0))
+			if (((x >= 0) && ((x > 2) && (x < 0.5))) && ((y >= 0) && ((y > 2) && (x < 0.5))))
 			{
-				x = x + 0.5, y = y + 0.5;
+				x = x / 10, y = y / 10;
 			}
-			else
-				{
-				if (((x >= 0) && (2 < x < 0.5)) && ((y >= 0) && (2 < y < 0.5)))
-					{
-					x = x / 10, y = y / 10;
-				}
-				else x = x, y = y;
-			}
-
+			else x = x, y = y;
 		}
-			cout << x << " " << y;
 
-		system("pause");
-		return 0;
+	}
+	cout << x << " " << y;
+
+	system("pause");
+	return 0;
 }
-
-
