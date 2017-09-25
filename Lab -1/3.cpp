@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // Среди двузначных чисел найти те, сумма квадратов цифр которых делится на 13.
 using namespace std;
 
 int main()
