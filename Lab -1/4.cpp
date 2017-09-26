@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main()
@@ -9,7 +8,7 @@ int main()
 	while (1)
 	{
 		double tor;
-		cout << "Ââîä ÷èñëà/'0' äëÿ çàâåðøåíèÿ: ";
+		cout << "Ð’Ð²Ð¾Ð´ Ñ‡Ð¸ÑÐ»Ð°/'0' Ð´Ð»Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ñ: ";
 		cin >> tor;
 		if (tor == 0)
 			break;
