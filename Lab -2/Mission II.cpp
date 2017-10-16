@@ -39,6 +39,6 @@ int main()
 	}
 
 	system("pause");
-	delete a;
+	delete []a;
 	return 0;
 }
