@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
 	int n;
-	cout << "Ââåäèòå ðàçìåðíîñòü ìàññèâà, à çàòåì åãî ýëåìåíòû: ";
+	cout << "Введите размерность массива, а затем его элементы: ";
 	cin >> n;
 
 	int *a = new int[n];
@@ -36,7 +36,7 @@ int main()
 			result *= a[i] + a[n - 1 - i];
 		}
 
-		cout << result; //âûâîäèòñÿ òîëüêî â ñëó÷àå, åñëè even == odd
+		cout << result; //выводится только в случае, если even == odd
 	}
 
 	system("pause");
