@@ -12,7 +12,7 @@ int main()
 	ifstream input("INPUT.txt");
 	if (!input)
 	{
-		cout << "Ôàéë INPUT.txt íå íàéäåí";
+		cout << "Ð¤Ð°Ð¹Ð» INPUT.txt Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½";
 	}
 
 	ofstream output("OUTPUT.txt");
@@ -30,26 +30,28 @@ int main()
 		year = strtok(NULL, ";");
 		salary = strtok(NULL, ";");
 
+		int *A = new char[256];
+
 		b = atoi(year);
 		s = atoi(salary);
 
-		if ((s > highest_s) && (2017 - b) < 35)
+		if ((2017 - b) < 35)
 		{
-		nname = name;
-		nsurname = surname;
-		npatronymic = patronymic;
-		bb = b;
-		highest_s = s;
+			swap(s, highest_s)
+			nname = name;
+			nsurname = surname;
+			npatronymic = patronymic;
+			bb = b;
+			highest_s = s;
 		}	
+		;
 	}
+	output << nname << " " << nsurname << " " << npatronymic << '\n' << "Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚: " << bb;
 
-	int r = 0;
-	for (int i = 0; i < r - 1; i++)
-	{
-
-	}
-
-	output << nname << " " << nsurname << " " << npatronymic << '\n' << "Àõàõà: " << bb;
 	input.close();
 	output.close();
+
+	system("pause");
+	delete[]A;
+	return 0;
 }
